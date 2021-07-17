@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* 共通 */
+body {
+    color: #555555;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contents1, .contents2, .contents3 {
+    height: 100vh;
+}
+
+.contents1 {
+    background-image: url(images/bread1.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 10vh;
+}
+
+.site-title {
+    font-size: 7rem;
+    margin-bottom: 3rem;
+}
+.title-description {
+    line-height: 1.7;
+}
+
+.contents2 {
+    background-image: url(images/bread2.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 10vh;
+}
+.contents2 .wrapper {
+    text-align: left;
+}
+.menu-title {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+.menu-list {
+    max-width: 50%;
+    width: 100%;
+}
+.menu-list-item {
+    display: flex;
+}
+
+
+.contents3 {
+    background-image: url(images/cafe.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
