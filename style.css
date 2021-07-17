@@ -3,6 +3,11 @@
 body {
     color: #555555;
 }
+main {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
 
 .wrapper {
     width: 100%;
@@ -13,6 +18,7 @@ body {
 
 .contents1, .contents2, .contents3 {
     height: 100vh;
+    scroll-snap-align: start;
 }
 
 .contents1 {
@@ -34,7 +40,8 @@ body {
     background-image: url(images/bread2.jpg);
     background-size: cover;
     background-position: center center;
-    padding-top: 10vh;
+    display: flex;
+    align-items: center;
 }
 .contents2 .wrapper {
     text-align: left;
@@ -43,19 +50,52 @@ body {
     font-size: 5rem;
     margin-bottom: 3rem;
 }
-
 .menu-list {
-    max-width: 50%;
-    width: 100%;
+    line-height: 1.7;
 }
-.menu-list-item {
-    display: flex;
+.menu-list tr {
+    margin-bottom: .5rem;
 }
-
+.menu-list th {
+    font-weight: normal;
+}
+.menu-list td {
+    padding-left: 1rem;
+}
 
 .contents3 {
     background-image: url(images/cafe.jpg);
     background-size: cover;
     background-position: center center;
-    
+    padding-top: 10vh;
+}
+
+.footer-title {
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+.contents3 p {
+    line-height: 1.7;
+}
+
+button {
+    width: 250px;
+    height: 56px;
+    background-color: green;
+    border-radius: 3px;
+    margin: 2rem 0 ;
+    color: #fff;
+    transition: all 0.3s;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+.sns-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sns-item:not(:first-child) {
+    margin-left: 30px;
 }
